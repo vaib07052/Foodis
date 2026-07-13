@@ -1,0 +1,109 @@
+@import "../../index.scss";
+
+.login {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background: #00000090;
+  display: flex;
+  justify-content: center;
+
+  // @include mobile {
+  //   height: 60%;
+  // }
+
+  .login-container {
+    place-self: center;
+    width: max(23vw, 300px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+
+    .login-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+
+      .close-btn {
+        background: none;
+        border: none;
+        color: black;
+        font: 1em sans-serif;
+        padding: 4px 12px;
+        border-radius: 50px;
+        font-size: 25px;
+        &:hover {
+          color: #eb0029;
+          background-color: #ffffff;
+          outline: 1px solid #eb0029;
+        }
+      }
+    }
+    .login-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input {
+        outline: none;
+        border: 1px solid #c9c9c9;
+        padding: 10px;
+        border-radius: 4px;
+      }
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      color: white;
+      background-color: #ed0029;
+      font-size: 15px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: white;
+        outline: 1px solid tomato;
+        color: tomato;
+      }
+    }
+
+    .google {
+      background-color: #649bf4;
+    }
+
+    .login-condition {
+      display: flex;
+      align-items: start;
+      gap: 8px;
+      margin-top: -15px;
+
+      input {
+        margin-top: 5px;
+      }
+    }
+    span {
+      color: #ed0029;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+}

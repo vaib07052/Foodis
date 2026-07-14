@@ -1,4 +1,4 @@
-# Foodeli
+# Foodeli---
 
 Foodeli is a comprehensive food ordering platform designed to provide users with a seamless experience from browsing to payment. Built with the MERN stack (MongoDB, Express, React, Node.js), Foodeli features user authentication, shopping cart functionality, and order status updates, with payment integration via Stripe.
 
